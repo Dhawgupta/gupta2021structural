@@ -1,0 +1,14 @@
+{
+    "problem" : "mnist_flat",
+    "node" : "discrete",
+    "agent" : "coagent_global_baseline",
+    "epochs" : 50,
+    "optimizer" : ["rmsprop"],
+    "model_specification" : [{"num_layers" : 1}],
+    "alpha": [0.00048828125],
+    "batch_size" : 32,
+    "seed" : [0, 1, 2, 3, 4],
+    "units_layer" : [64],
+    "eval_greedy" : true,
+    "pretrain" : [false]
+}

@@ -1,0 +1,16 @@
+{
+    "problem" : "boston_housing",
+    "agent" : [ "Monte"],
+    "epochs" : 5000,
+    "optimizer" : ["adam", "rmsprop"],
+    "model_specification" : [{"num_layers" : 1}],
+    "alpha": [0.00003051757812,  0.0001220703125, 0.00048828125, 0.001953125],
+    "batch_size" : 32,
+    "seed" : [0, 1, 2, 3, 4],
+    "eval_greedy" : true,
+    "units_layer" : [8,16,64],
+    "num_nn_layers" : 0,
+    "num_outputs": [2,4,8,16],
+    "epsilon": [1],
+    "exploration" : ["epsilon-greedy"]
+}

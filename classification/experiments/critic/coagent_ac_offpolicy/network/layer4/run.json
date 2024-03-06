@@ -1,0 +1,18 @@
+{
+    "problem" : "mnist_flat",
+    "node" : "discrete",
+    "agent" : "coagent_ac_offpolicy",
+    "epochs" : 1000,
+    "optimizer" : ["rmsprop"],
+    "model_specification" : [{"num_layers" : 4 }],
+    "alpha": [0.00048828125],
+    "batch_size" : 32,
+    "seed" : [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    "units_layer" : [64],
+    "eval_greedy" : true,
+    "pretrain" : [false],
+    "critic_alpha_ratio" : [ 2.0],
+    "critic_layer" : [1],
+    "critic_nodes" : [64, 128, 1024],
+    "measure" : "entropy_sparsity"
+}

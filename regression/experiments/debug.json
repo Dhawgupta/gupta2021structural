@@ -1,0 +1,16 @@
+{
+    "problem" : "boston_housing",
+    "agent" : [ "coagent_global_baseline"],
+    "epochs" : 200,
+    "model" : "generalcoagentparitition",
+    "model_partition" : ["s ss"],
+    "model_std" : 0.001,
+    "optimizer" : ["rmsprop"],
+    "model_specification" : [{"num_layers" : 3 ,  "activation" :  "relu"}],
+    "alpha": [ 0.000512],
+    "batch_size" : 32,
+    "seed" : [0, 1, 2, 3, 4],
+    "units_layer" : [64],
+    "eval_greedy" : true,
+    "backprop_epochs" : 100
+}

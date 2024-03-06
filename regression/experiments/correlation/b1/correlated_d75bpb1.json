@@ -1,0 +1,20 @@
+{
+    "problem" : "correlated",
+    "agent" : "backprop",
+    "epochs" : 1,
+    "optimizer" : ["adam"],
+    "model" : "generalneuralnet",
+    "model_specification" : [ {"num_layers" : 1 ,"activation" : "relu"},{"num_layers" : 2 ,"activation" : "relu"},{"num_layers" : 3 ,"activation" : "relu"}],
+    "alpha": [0.00006103515625, 0.0001220703125,  0.00024414062,0.00048828125,  0.001953125, 0.0078125],
+    "batch_size" : [1],
+    "seed" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+    "gradient_clipping" : ["none"],
+    "units_layer" : [50],
+    "pretrain" : [false],
+    "folds" : 5,
+    "foldno" : [0],
+    "eval_greedy": true,
+    "difficulty": [0.75],
+    "AdamBeta1": 0.9,
+    "AdamBeta2": 0.999
+}

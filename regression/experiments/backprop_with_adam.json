@@ -1,0 +1,19 @@
+{
+    "problem" : "boston_housing",
+    "agent" : "backprop",
+    "epochs" : 100,
+    "optimizer" : ["adam"],
+    "model" : "generalneuralnet",
+    "model_specification" : [{"num_layers" : 0 ,"activation" : "relu"}],
+    "alpha": [0.00006103515625],
+    "batch_size" : 32,
+    "seed" : [1,2,3,4],
+    "gradient_clipping" : ["none"],
+    "units_layer" : [4],
+    "pretrain" : [false],
+    "folds" : 5,
+    "foldno" : [0],
+    "eval_greedy": true,
+    "AdamBeta1": [0.9],
+    "AdamBeta2": [0.9]
+}

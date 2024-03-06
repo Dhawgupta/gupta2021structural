@@ -1,0 +1,20 @@
+{
+    "problem" : "correlated",
+    "agent" : "coagent_discrete",
+    "epochs" : 1,
+    "optimizer" : ["adam"],
+    "model_specification" : [ {"num_layers" : 1 ,"activation" : "relu"}],
+    "alpha": [0.0004],
+    "batch_size" : [10],
+    "seed" : [1],
+    "gradient_clipping" : ["none"],
+    "units_layer" : [50],
+    "pretrain" : [false],
+    "folds" : 5,
+    "foldno" : [0],
+    "eval_greedy": true,
+    "difficulty": [0.85],
+    "AdamBeta1": 0.9,
+    "AdamBeta2": 0.999,
+    "RMSpropBeta" : 0.99
+}
